@@ -7,15 +7,29 @@ namespace DevStore.Data.Models
 {
      public class Book
     {
+        //ид книги
         public int IdBook { get; set; }
+        //название
         public string NameBook { get; set; }
+        //автор книги
+        public string AuthorBook { get; set; }
+        //издательство
+        public string PublishingHouse { get; set; }
+        //короткое описание
         public string ShortDesc { get; set; }
-        public string LongSesc { get; set; }
+        //длинное описание
+        public string LongDesc { get; set; }
+
         public string Img { get; set; }
+        //цена
         public float Price { get; set; }
+        //популярность
         public bool IsFavorite { get; set; }
-        public int Available { get; set; }
+        //остаток на складе
+        public int StockaResidue { get; set; }
+        //ид категории
         public int CategoryID { get; set; }
+
         public virtual Category Category { get; set; }
 
     }
