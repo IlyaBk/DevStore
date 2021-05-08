@@ -8,8 +8,8 @@ namespace DevStore.Data.Interfaces
 {
     public interface IAllBook
     {
-        IEnumerable<Book> Books { get; set; }
-        IEnumerable<Book> getFavBooks { get; set; }
+        IEnumerable<Book> Books { get; }
+        IEnumerable<Book> getFavBooks { get;}
         Book getObjectBook(int BookId);
 
     }
